@@ -9,7 +9,7 @@ jobs:
     steps:
       - env:
           MESSAGE: ${{ github.event.client_payload.message }}
-        run: echo $MESSAGE
+        run: echo ${{ github.event.client_payload.message }}
   run_if_success:
     if: ${{ github.event.client_payload.passed }}
     runs-on: ubuntu-latest
