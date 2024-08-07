@@ -27,4 +27,4 @@ jobs:
               with:
                 context: ./python/
                 push: true
-                tags: '${{ secrets.DOCKER_USERNAME }}/flask-app:v1'
+                tags: '${{ secrets.DOCKER_USERNAME }}/private-repo-test:v1'
